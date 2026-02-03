@@ -57,7 +57,7 @@ Na dit praatje aan semantisch te werk gaan is er nog aparte styling in de websit
 
 We beginnen weer met de header, want daar zijn een aantal stukken die gelijk opvielen. De media-query die wordt gebruikt bij de header heeft een wat andere breakpoints dan ik gewend ben. Ik zal ze hieronder neerzetten in volgorde:
 320px - 767px
-
+<img src="![small screen menu](<assets/Screenshot 2026-02-03 131423.png>)">
 
 767px - 1279px
 
