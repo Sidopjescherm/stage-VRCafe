@@ -115,7 +115,7 @@ Nu als oplossing kan ik met trots de ‘@container-query’ aanbieden. Deze quer
 Een ander probleem dat ik heb gezien is de carrousel op de pagina’s. Deze carrousels zouden een leuke, interactieve manier moeten zijn voor de website. Helaas is het op kleinere schermen juist het tegendeel. Waarschijnlijk komt dit, omdat het een geïmporteerd gedeelte is en niet custom-made is voor de website. Er komt een mooie uitlijning voor de gebruiker op mobiel en het is vrij hard voor de ogen om dit zo te zien. Zo ziet het er momenteel uit op mobiel:
 <br>
 <img width="354" height="620" alt="Carousel dat niet werkt" src="https://github.com/user-attachments/assets/5b28675a-7150-4906-ad40-9381f3643500" />
-<br>
+<br
 <img width="350" height="609" alt="Carousel dat niet werkt 2" src="https://github.com/user-attachments/assets/80833b37-3e42-4531-b6f0-25240ee96f1d" />
 <br>
 <img width="396" height="590" alt="Kleinere carousel" src="https://github.com/user-attachments/assets/8a1838e6-e4ba-4ad0-8927-1862073727b8" />
@@ -147,3 +147,95 @@ Wat we hieruit kunnen zien is dat de non-actieve knop van 'boeken' wel goed door
 <br>
 #### Blauw kleurenblind
 <img width="1123" height="826" alt="Screenshot 2026-02-04 093911" src="https://github.com/user-attachments/assets/47cad17a-3e3f-4df8-b728-a7ce0d6ef429" />
+
+## Code
+Nu iets waar ik deze problemen mee kan oplossen. Al deze keuzes komen uiteindelijk uit een ding voor, dat ding is de code. Het VRcafe maakt gebruik van TailwindCSS en dit heeft enige success, maar het ziet er nmaar mijn beeld heel erg overdrevben uit. Ook niet alle syntaxt wordt aangehouden waar een for each loop gebruikt zou kunnen worden of zelfs optimalisatie van de kleuren. Ik zal hieronder mee uitleggen over de code zelf en hoe het verbeterd zou kunnen worden.
+
+### Kleuren
+Zoals in de zin hierboven vermeld had ik het al over de kleuren. Ik zie hier eenvoudige HEXkleuren die op de meeste pagina's gebruikt worden, maar erg verstandig is dit niet echt. HEX-decimale kleuren zijn makkelijk te coderen of zelfs maken, maar zijn niet optimaal voor gradients of zelfs schermen. Omdat we alleen maar met schermen werken is het verstandig om kleuren om te zetten alseerst in `RGB` of `HSL` en daarna naar `lch` of zelfs `oklch` met behulp van een `@supports` regel. Momenteel ziet het kleuren palet er zo uit:
+```css
+  --color-primary: #630f8e;
+  --color-secondary: #fd3e81;
+  --color-accent: #36f2aa;
+  --color-text: #ffffff;
+  --color-education: #fecd00;
+  --color-business-blue: #2eacff;
+  --color-info: #c267ff;
+  --color-black: #000000;
+  --color-secondary-black: #1e1921;
+  --color-third-black: #18141a;
+  --color-accent-purple: #36004d;
+  --color-blueish: #583dc4;
+  --color-secondary-purple: #830192;
+  --color-food-purple: #481c74;
+  --color-dark-blue: #3e46b7;
+  --color-dark-gray: #2b272d;
+  --color-light-gray: #363039;
+  --color-third-gray: #272329;
+  --color-error-red: #990000;
+  --font-sans: 'Rubik', serif;
+```
+Dit werkt prima, maar eigenlijk kan het NOG beter. Want we geven nu alleen maar `HEX` kleuren op, maar wat nou als we het omzetten in `RGB` en 'Enhancen' naar `oklch`?
+```css
+  --color-primary: rgb(99 15 142);
+  --color-secondary: rgb(253 62 129);
+  --color-accent: rgb(54 242 170);
+  --color-text: rgb(255 255 255);
+  --color-education: rgb(254 205 0);
+  --color-business-blue: rgb(46 172 255);
+  --color-info: rgb(194 103 255);
+  --color-black: rgb(0 0 0);
+  --color-secondary-black: rgb(30 25 33);
+  --color-third-black: rgb(24 20 26);
+  --color-accent-purple: rgb(54 0 77);
+  --color-blueish: rgb(88 61 196);
+  --color-secondary-purple: rgb(131 1 146);
+  --color-food-purple: rgb(72 28 116);
+  --color-dark-blue: rgb(62 70 183);
+  --color-dark-gray: rgb(43 39 45);
+  --color-light-gray: rgb(54 48 57);
+  --color-third-gray: rgb(39 35 41);
+  --color-error-red: rgb(153 0 0);
+  --font-sans: 'Rubik', serif;
+ @supports (color: oklch(56.24% 0.173 40.93)) {
+      --color-primary: oklch(0.39 0.19 309);
+	  --color-secondary: oklch(0.67 0.23 5);
+	  --color-accent: oklch(0.85 0.18 162);
+	  --color-text: oklch(1.00 0.00 0.00;
+	  --color-education: oklch(0.87 0.18 91);
+	  --color-business-blue: oklch(0.72 0.16 244);
+	  --color-info: oklch(0.68 0.22 309);
+	  --color-black: oklch(0.00 0.00 1.00);
+	  --color-secondary-black: oklch(0.22 0.02 313);
+	  --color-third-black: oklch(0.20 0.01 315);
+	  --color-accent-purple: oklch(0.25 0.13 312);
+	  --color-blueish: oklch(0.47 0.20 285);
+	  --color-secondary-purple: oklch(0.44 0.21 323);
+	  --color-food-purple: oklch(0.34 0.14 302);
+	  --color-dark-blue: oklch(0.46 0.18 274);
+	  --color-dark-gray: oklch(0.28 0.01 315);
+	  --color-light-gray: oklch(0.32 0.02 315);
+	  --color-third-gray: oklch(0.26 0.01 315);
+	  --color-error-red: oklch(0.43 0.18 29);
+	  --font-sans: 'Rubik', serif;
+ }
+```
+En zo zijn er nog meer van dit soort manieren om de code beter op te stellen. Het is inderdaad wat meer typewerk voor het verbeteren, maar het kan wel echt beter werken voor in de toekomst. Ik denk dat dit de beste manier ervan is om de website echt beter te maken voor iedereen.
+
+### Tekst
+Het web en al zn UI-components is 80% tekst. Het is een feit en je kan er niet omheen. Daarom is het zo belangrijk om te kijken naar juiste grootte en leesbaarheid van de tekst zelf. Ik heb gezien in de globale stylesheet dat er 13 pixels ~ 0.813em wordt gebruikt en dat is net een te kleine tekst grootte. Minimaal 16 pixels is echt de norm voor leesbare websites, want anders zouden mensen met een kleiner scherm (iphone SE) het moeilijker kunnen leze.n. Wat ik ook heb gezien met tailwind is dat er veel classes worden gemaakt over een simpele h1. Ik denk dat het veel slimmer is om dit gewoon in CSS te maken. Niet alleen is het native in de browser het is ook nog eens veel compacter zonder onnodige classes. Hier een voorbeeld:
+<br>
+Oud
+```css
+  --text-h1: 5.313rem;
+  --text-h1--font-weight: 900;
+```
+Nieuw
+```css
+  h1 {
+  	font-size: 5.313rem;
+	font-weight: 900;
+  }
+```
+Nu helpt dit niet alleen met teveel classes op een element zetten, maar is het ook logischer in je code, want een h1 is in 98% van alle gevallen tekst en is dus onnodig om 'text' in de variabele neer te zetten.
+
