@@ -1,6 +1,8 @@
 # Analyse VRCafe
 
 ## Index
+- [Opzet](#opzet)
+- [Semantisch Werken en styling](#semantisch-werken-en-styling)
 - [Styling](#styling)
 
 ## Mijn bevindingen
