@@ -4,7 +4,7 @@
 - [Uitleg](#uitleg)
 - [Mijn bevindingen](#mijn-bevindingen)
 - [Opzet](#opzet)
-- [Semantisch Werken en styling](#semantisch-werken-en-styling)
+- [Semantisch Werken en styling](#semantisch-werken)
 - [Styling](#styling)
 - [Code](#code)
   	- [Kleuren](#kleuren)
@@ -29,7 +29,7 @@ Na het lezen van de documentatie zie ik dat het VRcafe gebruik maakt van: Tailwi
 <br>
 een aantal van deze errors komen van het incorrect plaatsen van bepaalde code. Er zijn een aantal fouten die ik momenteel alleen zie in het zogeheten ‘-partytown.’ Dit lijkt mij een omgeving die gebruikt wordt voor de backend, maar ik zie wel veel meldingen vanuit hier komen. Het meeste hiervan is backend en daar heb ik bijna niets mee te maken, maar wat ik aantref qua opmaak van de website is wel om iets van te noteren en iets waar ik wat aan kan doen. 
 
-### Semantisch werken en styling
+### Semantisch werken
 Semantische code schrijven is wel het meest verstandige om te doen. Zo help je niet alleen jezelf en je huidige collega’s, maar ook toekomstige collega’s met het schrijven van deze code. Het meeste van de code die uitgelegd wordt staat op de docs repo in Github en dat is erg fijn. Wat ik wel heb gemerkt is dat de website echt niet vriendelijk is als je CSS uit hebt staan. Nu zal een tegen argument zijn dat niemand CSS uit heeft staan, maar het verslaat wel het principe van het web als geheel. Het moet toegankelijk blijven voor mensen vanuit alle windstreken, met welk lichaam dan ook. Wat ik hiermee bedoel ik dat mensen met een motorische stoornis, geen armen of gebruik maken van een screenreader ook gebruik moeten kunnen maken van de website. 
 
 Wat mij opviel bij deze website is dat afbeeldingen/svg’s niet een standaard waarde krijgen meegegeven als ze worden ingeladen. Dit zorgt ten eerste voor webpagina’s waar de eerste gedeelten van het scrollen bestaan uit de header zelf. Vele iconen die worden gebruikt in de header zijn VEELS te groot. Vele tekens nemen een heel scherm op in grootte. Via mijn DEVtools ben ik erachter gekomen hoe het zonder CSS eruit zou zien. Hier een aantal voorbeelden die mij erg opvielen:
