@@ -4,7 +4,7 @@
 - [Uitleg](#uitleg)
 - [Mijn bevindingen](#mijn-bevindingen)
 - [Opzet](#opzet)
-- [Semantisch Werken en styling](#semantisch-werken)
+- [Semantisch Werken](#semantisch-werken)
 - [Styling](#styling)
 - [Code](#code)
   	- [Kleuren](#kleuren)
