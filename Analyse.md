@@ -6,6 +6,9 @@
 - [Opzet](#opzet)
 - [Semantisch Werken en styling](#semantisch-werken-en-styling)
 - [Styling](#styling)
+- [Code](#code)
+  	- [Kleuren](#kleuren)
+  	- [Tekst](#tekst)
 
 ## Uitleg
 Dit document is gemaakt omdat ik bezig ben met het beter begrijpen van het VRcafe en de website. In deze analyse heb ik gekeken naar het gebruik van HTML, CSS en het semantisch gebruik hiervan. Als student Frontend-webdeveloper is het mijn taak om deze website beter te begrijpen en uitelkaar te halen zodat ik weet hoe het werkt. 
