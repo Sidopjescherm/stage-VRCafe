@@ -152,10 +152,10 @@ Wat we hieruit kunnen zien is dat de non-actieve knop van 'boeken' wel goed door
 <img width="1123" height="826" alt="Screenshot 2026-02-04 093911" src="https://github.com/user-attachments/assets/47cad17a-3e3f-4df8-b728-a7ce0d6ef429" />
 
 ## Code
-Nu iets waar ik deze problemen mee kan oplossen. Al deze keuzes komen uiteindelijk uit een ding voor, dat ding is de code. Het VRcafe maakt gebruik van TailwindCSS en dit heeft enige success, maar het ziet er nmaar mijn beeld heel erg overdrevben uit. Ook niet alle syntaxt wordt aangehouden waar een for each loop gebruikt zou kunnen worden of zelfs optimalisatie van de kleuren. Ik zal hieronder mee uitleggen over de code zelf en hoe het verbeterd zou kunnen worden.
+Nu iets waar ik deze problemen mee kan oplossen. Al deze keuzes komen uiteindelijk uit een ding voor, dat ding is de code. Het VRcafe maakt gebruik van TailwindCSS en dit heeft enige success, maar het ziet er maar mijn beeld heel erg overdreven uit. Ook niet alle syntax wordt aangehouden waar een for each loop gebruikt zou kunnen worden of zelfs optimalisatie van de kleuren. Ik zal hieronder mee uitleggen over de code zelf en hoe het verbeterd zou kunnen worden.
 
 ### Kleuren
-Zoals in de zin hierboven vermeld had ik het al over de kleuren. Ik zie hier eenvoudige HEXkleuren die op de meeste pagina's gebruikt worden, maar erg verstandig is dit niet echt. HEX-decimale kleuren zijn makkelijk te coderen of zelfs maken, maar zijn niet optimaal voor gradients of zelfs schermen. Omdat we alleen maar met schermen werken is het verstandig om kleuren om te zetten alseerst in `RGB` of `HSL` en daarna naar `lch` of zelfs `oklch` met behulp van een `@supports` regel. Momenteel ziet het kleuren palet er zo uit:
+Zoals in de zin hierboven vermeld had ik het al over de kleuren. Ik zie hier eenvoudige HEX kleuren die op de meeste pagina's gebruikt worden, maar erg verstandig is dit niet echt. HEX-decimale kleuren zijn makkelijk te coderen of zelfs maken, maar zijn niet optimaal voor gradients of zelfs schermen. Omdat we alleen maar met schermen werken is het verstandig om kleuren om te zetten als eerst in `RGB` of `HSL` en daarna naar `lch` of zelfs `oklch` met behulp van een `@supports` regel. Momenteel ziet het kleuren palet er zo uit:
 ```css
   --color-primary: #630f8e;
   --color-secondary: #fd3e81;
@@ -226,7 +226,7 @@ Dit werkt prima, maar eigenlijk kan het NOG beter. Want we geven nu alleen maar 
 En zo zijn er nog meer van dit soort manieren om de code beter op te stellen. Het is inderdaad wat meer typewerk voor het verbeteren, maar het kan wel echt beter werken voor in de toekomst. Ik denk dat dit de beste manier ervan is om de website echt beter te maken voor iedereen.
 
 ### Tekst
-Het web en al zn UI-components is 80% tekst. Het is een feit en je kan er niet omheen. Daarom is het zo belangrijk om te kijken naar juiste grootte en leesbaarheid van de tekst zelf. Ik heb gezien in de globale stylesheet dat er 13 pixels ~ 0.813em wordt gebruikt en dat is net een te kleine tekst grootte. Minimaal 16 pixels is echt de norm voor leesbare websites, want anders zouden mensen met een kleiner scherm (iphone SE) het moeilijker kunnen leze.n. Wat ik ook heb gezien met tailwind is dat er veel classes worden gemaakt over een simpele h1. Ik denk dat het veel slimmer is om dit gewoon in CSS te maken. Niet alleen is het native in de browser het is ook nog eens veel compacter zonder onnodige classes. Hier een voorbeeld:
+Het web en al zn UI-components is 80% tekst. Het is een feit en je kan er niet omheen. Daarom is het zo belangrijk om te kijken naar juiste grootte en leesbaarheid van de tekst zelf. Ik heb gezien in de globale stylesheet dat er 13 pixels ~ 0.813em wordt gebruikt en dat is net een te kleine tekst grootte. Minimaal 16 pixels is echt de norm voor leesbare websites, want anders zouden mensen met een kleiner scherm (iphone SE) het moeilijker kunnen lezen. Wat ik ook heb gezien met tailwind is dat er veel classes worden gemaakt over een simpele h1. Ik denk dat het veel slimmer is om dit gewoon in CSS te maken. Niet alleen is het native in de browser, maar het is ook nog eens veel compacter zonder onnodige classes. Hier een voorbeeld:
 <br>
 Oud
 ```css
