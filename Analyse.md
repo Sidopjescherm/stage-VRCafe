@@ -9,6 +9,7 @@
 - [Code](#code)
   	- [Kleuren](#kleuren)
   	- [Tekst](#tekst)
+- [Samenvatting](#samenvatting)
 
 ## Uitleg
 Dit document is gemaakt omdat ik bezig ben met het beter begrijpen van het VRcafe en de website. In deze analyse heb ik gekeken naar het gebruik van HTML, CSS en het semantisch gebruik hiervan. Als student Frontend-webdeveloper is het mijn taak om deze website beter te begrijpen en uitelkaar te halen zodat ik weet hoe het werkt. 
@@ -241,4 +242,7 @@ Nieuw
   }
 ```
 Nu helpt dit niet alleen met teveel classes op een element zetten, maar is het ook logischer in je code, want een h1 is in 98% van alle gevallen tekst en is dus onnodig om 'text' in de variabele neer te zetten.
+
+## Samenvatting
+Samengevat is het VRcafe een prima website om door te navigeren, maar echt geoptimaliseerd is op sommige punten slechts een illusie die wordt gebracht door TailwindCSS, React en de belofte van Astro. Na het zien van dit project zie ik wel in dat we verder in TailwindCSS moeten werken, want ik heb gezien dat de meeste bestanden hier al mee zijn bewerkt, maar er is zeker ruimte om af en toe pure CSS en HTML in te voegen. 
 
