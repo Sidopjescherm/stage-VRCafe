@@ -1,9 +1,14 @@
 # Analyse VRCafe
 
 ## Index
+- [Uitleg](#uitleg)
+- [Mijn bevindingen](#mijn-bevindingen)
 - [Opzet](#opzet)
 - [Semantisch Werken en styling](#semantisch-werken-en-styling)
 - [Styling](#styling)
+
+## Uitleg
+Dit document is gemaakt omdat ik bezig ben met het beter begrijpen van het VRcafe en de website. In deze analyse heb ik gekeken naar het gebruik van HTML, CSS en het semantisch gebruik hiervan. Als student Frontend-webdeveloper is het mijn taak om deze website beter te begrijpen en uitelkaar te halen zodat ik weet hoe het werkt. 
 
 ## Mijn bevindingen
 Na de hele ochtend te testen op de website en te kijken naar de website in de styling kwam ik achter een aantal dingen die mij opvielen. Eerst wilde ik het hebben over wat het VRcafe is, zodat de boodschap helder is voor mij. 
