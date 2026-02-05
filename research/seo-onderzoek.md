@@ -7,7 +7,8 @@ Deze opdracht over SEO heb ik gekregen van mijn stagebegeleider Owen. Het doel v
 SEO staat voor Search Engine Optimization. Zoekmachines zoeken dus jouw website voor info die zij belangrijk vinden voor de gebruiker die het inzet. Hieronder zal ik de criteria neerzetten die belangrijk zijn voor SEO en wat VRcafe wel of niet al inzet.
 
 ## Index
- - [Semantische HTML](semantische-html)
+ * [Semantische HTML](semantische-html)
+ * [Image Optimization](image-optimization)
 
 > [!IMPORTANT] 
 > Accessability is optimalisatie voor SE
@@ -49,7 +50,11 @@ Ik vind dat het VRcafe hier erg slordig mee omgaat, want je hebt geen `nav` tag,
     </ul>
 </nav>
 ```
-Dat schoont al een heleboel code op. Niet alleen is dit nu negen regels code inplaats van 16 ook is het nogsteeds even stijlbaar. Kleine veranderingen als dit helpen dus niet alleen met zoekmachines jouw website indexeren, het helpt toekomstige developers ook met jouw code begrijpen. Accessability is SEO. In de DesktopNAV zie ik wel dat er een `nav` tag is toegepast en heeft `li` elementen in `ul` of `menu` zitten. Dat is een goede stap voor verbetering.
+Ik kan nu wel vertellen wat er belangrijk is, maar het beste zou zijn om te tonen hoe tools als Lighthouse, HeadingsMap en PagespeedInsight het zien:
+
+
+### Image optimization
+Iets dat nog wel eens wordt overgeslagen is het optimaliseren van afbeeldingen. Nu heb ik het niet alleen over grote afbeeldingen die zullen worden ingeladen, ik heb het ook over alt attributen. Zoekmachines lezen deze attributen die op de afbeelding staan en maken op basis daarvan de keuze om het te laten zien.
 
 
 
