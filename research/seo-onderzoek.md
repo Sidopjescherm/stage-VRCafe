@@ -9,7 +9,7 @@ SEO staat voor Search Engine Optimization. Zoekmachines zoeken dus jouw website 
 ## Index
  - [Semantische HTML](semantische-html)
 
-[!IMPORTANT](Accessability is optimalisatie voor SE)
+[!IMPORTANT] Accessability is optimalisatie voor SE
 
 ### Semantische HTML
 Om hoog te komen voor search engines is semantisch HTML schrijven erg van toepassing. Omdat zoekmachines tekst lezen is het belangrijk deze op goede orde te stellen. Je `header` moet een `header` tag hebben, je belangrijkste tekst op een pagina is een `h1` en tekst dat gepaard gaat met een afbeelding die ergens anders op de site herplaatst zou kunnen worden in een `article`. Dit helpt de zoekmachine met een index maken van je website zodat het die het weer kan terugkoppelen aan de gebruiker.
