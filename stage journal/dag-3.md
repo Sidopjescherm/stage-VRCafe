@@ -1,0 +1,6 @@
+# Dag 3 stage
+
+## Vandaag op stage
+Deze dag op stage heb ik officieel mijn analyse voltooid nadat ik heb met mijn stagebegeleider heb besproken wat ik gevonden had. Na dat besproken te hebben heb ik samen met de andere stagiaire Ivan samen gezeten en gepraat over ons onderzoek. Hij had ook een aantal interessante punten die hij vermeld had en wij hebben een aantal van deze problemen omgezet naar User Stories.
+
+Vandaag hebben wij ook een opdracht gekregen van Owen om te werken aan een [SEO onderzoek](research/seo-onderzoek.md). Dit lijkt mij een interessant onderzoek om te laten zien hoe belangrijk nette code is voor SEO. Na een uurtje typen heb ik feedback gevraagd aan @krijnhoetmer die heel wat meer weet van SEO en hoe je het kan overbrengen aan stakeholders. Daar heeft nu het meeste van mijn dagdeel ingezeten, omdat ik eerst de juiste bronnen wilde afgaan en daarna zorgvuldig wilde testen. Voor de komende dagen qua onderzoek is dat wat mij bezig zal houden wanneer ik hier op stage ben. 
