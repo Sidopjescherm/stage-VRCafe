@@ -115,10 +115,13 @@ VR at home heading levels:
 visueel:
 <img src="../assets/seo-onderzoek/VR at home en leukstje uitje voor thuis visueel.png">
 
-<br>
+
 Ook met behulp van een site crawler zoals [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/#) zie ik dat er meerdere h1 elementen worden gebruikt in één document. Dat is zeker niet de bedoeling, want zo zien zoekmachines niet wat je belangrijkste content is op de pagina.
+<br>
 <img src="../assets/seo-onderzoek/drie h1&apos;s op een pagina.png">
 </br>
+
+
 
 ## Bronnen
 - [Guide to SEO with Frontend](https://medium.com/@msmt0452/a-comprehensive-guide-to-seo-optimization-for-frontend-developers-eaf79bc1e1d2)
