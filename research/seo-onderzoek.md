@@ -9,6 +9,7 @@ SEO staat voor Search Engine Optimization. Zoekmachines zoeken dus jouw website 
 ## Index
  * [Semantische HTML](semantische-html)
  * [Image Optimization](image-optimization)
+ * [Heading levels](heading-levels)
 
 > [!IMPORTANT] 
 > Accessability is optimalisatie voor SE
@@ -66,10 +67,41 @@ Dit kan dus inderdaad veel beter! Dit zal helpen met gebruikers behouden op de m
     <img src="VRcafe-logo.jpg" alt="terug naar de homepagina van het VRcafe" loading="lazy">
 </picture>
 ```
-Dus niet alleen helpt dit met het maken van afbeeldingen die niet te lang laden, dit helpt ook met zoekmachines jouw website eruit halen voor optimalisatie qua afbeeldingen. Nu met het gepraat over alt teksten is het niet de bedoeling om dit op alle afbeeldingen te plaatsen waar het niet nodig is, behoudt het op afbeeldingen die iets toevoegen aan de inhoud, niet er extra bovenop. Wat ook nog helpt met grote afbeeldingen is lazy loading. Deze afbeeldingen zullen dan pas worden ingeladen wanneer ze in je viewport komen, dus dat is nog beter voor LCP.
+Dus niet alleen helpt dit met het maken van afbeeldingen die niet te lang laden, dit helpt ook met zoekmachines jouw website eruit halen voor optimalisatie qua afbeeldingen. Nu met het gepraat over alt teksten is het niet de bedoeling om dit op alle afbeeldingen te plaatsen waar het niet nodig is, behoudt het op afbeeldingen die iets toevoegen aan de inhoud, niet er extra bovenop. Wat ook nog helpt met grote afbeeldingen is lazy loading. Deze afbeeldingen zullen dan pas worden ingeladen wanneer ze in je viewport komen, dus dat is nog beter voor LCP. 
 
 #### Hoe doet VRcafe dat?:
-VRcafe zal nog wel moeten werken aan een aantal van deze principes
+VRcafe zal nog wel moeten werken aan een aantal van deze principes, want een aantal teksten zijn nog niet zo goed als ze kunnen zijn of zijn te overbodig. 
+
+goed gebruik van alt tekst:
+<img src="../assets/seo-onderzoek/een goed gebruik van alt tekst.png">
+Hier worden alt teksten al goed ingezet, behalve het ALT-gedeelte over een sneeuwman en een sneeuw overlay.
+
+onnodig gebruik van alt tekst:
+<img src="../assets/seo-onderzoek/Een slecht voorbeeld van alt tekst.png">
+De alt teksten die hier staan zijn erg onnodig, want de tekst die in de alt wordt benoemd staat al onder in een `p` tag. In deze gevallen waar het decoratief is zet je een lege alt tag neer(`alt=""`). 
+
+het gebruik van alt tekst kan beter:
+<img src="../assets/seo-onderzoek/Een voorbeeld hoe een alt tekst beter kan.png">
+De alt tekst op dit logo is technisch gezien correct, maar een betere benaming zou zijn dat het een terug keer knop is naar de homepagina, want daar dient het ook voor! Dus daar kan wat meer verbetering in.
+
+### Heading levels
+Heading levels zijn erg belanmgrijk voor je website en ook voor zoekmachines. Headings voor zoekmachines zijn een goede manier van het indelen van je belangrijkste tot minst belangrijkste content. Een belangrijke regel voor headings zijn: altijd één `h1` per pagina gebruiken, gebruik logische vervolging van subheadings en houdt de headings descriptief. Een tool als headingsmap laat ook precies zien waar het goed gaat en waar het niet goed gaat.
+
+### Hoe doet VRcafe dat?:
+VRcafe behoudt de heading levels op een goed niveau, maar er zijn hier en daar nog wel wat puntjes om op te letten. De meeste headings die worden gebruikt in de website zijn correct neergezet zoals deze headings:
+<img src="../assets/seo-onderzoek/correcte heading wist je dat.png">
+visueel:
+<img src="../assets/seo-onderzoek/wist je dat.png">
+
+Maar verder in de pagina zijn er reviews van gamers en deze is helaas niet goed qua opmaak. We springen van een `h2` meteen naar een `h4` en op de VR at home is er gebruik gemaakt van twee `h2`'s, maar het is logischer om hier een `h2` en `h3` van te maken. Als we dit oplossen dan komt er vast en zeker een betere SEO score uit dan dat er nu al is.
+
+Review van gamers op de homepage:
+<img src="../assets/seo-onderzoek/heading levels homepage.png">
+
+VR at home heading levels:
+<img src="../assets/seo-onderzoek/incorrecte heading VR at home en leukste uitje in code.png">
+visueel:
+<img src="../assets/seo-onderzoek/VR at home en leukstje uitje voor thuis visueel.png">
 
 ## Bronnen
 - [Guide to SEO with Frontend](https://medium.com/@msmt0452/a-comprehensive-guide-to-seo-optimization-for-frontend-developers-eaf79bc1e1d2)
