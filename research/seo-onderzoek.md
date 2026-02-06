@@ -92,7 +92,9 @@ Heading levels zijn erg belanmgrijk voor je website en ook voor zoekmachines. He
 
 ### Hoe doet VRcafe dat?:
 VRcafe behoudt de heading levels op een goed niveau, maar er zijn hier en daar nog wel wat puntjes om op te letten. De meeste headings die worden gebruikt in de website zijn correct neergezet zoals deze headings:
+<br>
 <img src="../assets/seo-onderzoek/correcte heading wist je dat.png">
+</br>
 visueel:
 <img src="../assets/seo-onderzoek/wist je dat.png">
 
