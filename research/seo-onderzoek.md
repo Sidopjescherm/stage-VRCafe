@@ -105,10 +105,14 @@ Maar verder in de pagina zijn er reviews van gamers en deze is helaas niet goed 
 
 
 Review van gamers op de homepage:
+<br>
 <img src="../assets/seo-onderzoek/heading levels homepage.png">
+</br>
 
+<br>
 VR at home heading levels:
 <img src="../assets/seo-onderzoek/incorrecte heading VR at home en leukste uitje in code.png">
+</br>
 visueel:
 <img src="../assets/seo-onderzoek/VR at home en leukstje uitje voor thuis visueel.png">
 
