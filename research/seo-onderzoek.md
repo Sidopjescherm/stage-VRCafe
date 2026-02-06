@@ -51,12 +51,25 @@ Ik vind dat het VRcafe hier erg slordig mee omgaat, want je hebt geen `nav` tag,
 </nav>
 ```
 Ik kan nu wel vertellen wat er belangrijk is, maar het beste zou zijn om te tonen hoe tools als Lighthouse, HeadingsMap en PagespeedInsight het zien:
-
+<img src="../assets/seo-onderzoek/Screenshot 2026-02-05 161546.png">
 
 ### Image optimization
-Iets dat nog wel eens wordt overgeslagen is het optimaliseren van afbeeldingen. Nu heb ik het niet alleen over grote afbeeldingen die zullen worden ingeladen, ik heb het ook over alt attributen. Zoekmachines lezen deze attributen die op de afbeelding staan en maken op basis daarvan de keuze om het te laten zien.
+Iets dat nog wel eens wordt overgeslagen is het optimaliseren van afbeeldingen. Nu heb ik het niet alleen over grote afbeeldingen die zullen worden ingeladen, ik heb het ook over alt attributen. Zoekmachines lezen deze attributen die op de afbeelding staan en maken op basis daarvan de keuze om het te laten zien. Bijvoorbeeld iemand die van een berg af aan het skiën is zou de alt tekst moeten hebben: 'Persoon die van een besneeuwde berg aan het skiën is." Dit helpt al een hele boel voor SEO, omdat het actuele informatie is. 
 
+Verder zijn kleinschalige images beter voor een LCP, want wat er nu gebeurt is dat de website langzamer zal worden ingeladen. Kijk maar eens wat PageSpeed Insight ziet:
 
+Dit kan dus inderdaad veel beter! Dit zal helpen met gebruikers behouden op de mobiele website. Dit is op te lossen door gebruik te maken van het `picture` element in de HTML. Deze tag kan je gebruiken om tegen de browser te vertellen dat er een plaatje is, maar je kan zelf het format bepalen waar het uitkomt. Zo zou het eruit zien:
+```html
+<picture>
+    <source srcset="VRcafe-logo.webp" type="image/webp">
+    <source srcset="VRcafe-logo.avif" type="image/avif">
+    <img src="VRcafe-logo.jpg" alt="terug naar de homepagina van het VRcafe" loading="lazy">
+</picture>
+```
+Dus niet alleen helpt dit met het maken van afbeeldingen die niet te lang laden, dit helpt ook met zoekmachines jouw website eruit halen voor optimalisatie qua afbeeldingen. Nu met het gepraat over alt teksten is het niet de bedoeling om dit op alle afbeeldingen te plaatsen waar het niet nodig is, behoudt het op afbeeldingen die iets toevoegen aan de inhoud, niet er extra bovenop. Wat ook nog helpt met grote afbeeldingen is lazy loading. Deze afbeeldingen zullen dan pas worden ingeladen wanneer ze in je viewport komen, dus dat is nog beter voor LCP.
+
+#### Hoe doet VRcafe dat?:
+VRcafe zal nog wel moeten werken aan een aantal van deze principes
 
 ## Bronnen
 - [Guide to SEO with Frontend](https://medium.com/@msmt0452/a-comprehensive-guide-to-seo-optimization-for-frontend-developers-eaf79bc1e1d2)
