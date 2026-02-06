@@ -95,10 +95,14 @@ VRcafe behoudt de heading levels op een goed niveau, maar er zijn hier en daar n
 <br>
 <img src="../assets/seo-onderzoek/correcte heading wist je dat.png">
 </br>
+
+<br>
 visueel:
 <img src="../assets/seo-onderzoek/wist je dat.png">
 
 Maar verder in de pagina zijn er reviews van gamers en deze is helaas niet goed qua opmaak. We springen van een `h2` meteen naar een `h4` en op de VR at home is er gebruik gemaakt van twee `h2`'s, maar het is logischer om hier een `h2` en `h3` van te maken. Als we dit oplossen dan komt er vast en zeker een betere SEO score uit dan dat er nu al is.
+</br>
+
 
 Review van gamers op de homepage:
 <img src="../assets/seo-onderzoek/heading levels homepage.png">
