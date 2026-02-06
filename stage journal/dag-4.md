@@ -1,0 +1,4 @@
+# Dag 4 stage
+
+## Vandaag op stage
+Vandaag op stage heb verder gewerkt aan mijn SEO onderzoek dat ik moest maken. Ik heb verder getypt over het beter maken van de website en SEO die nog verbeterd kan worden, dat is [hier](../research/seo-onderzoek.md) terug te zien. Verder heb ik vandaag in mijn pauze nog wat feedbakc gegeven aan de eerstejaars student [Kevin](https://github.com/toasterbath0758/connect-your-tribe-profile-card/issues/1#issuecomment-3860760229) over zijn semantiek in HTML. Als laatst heb ik nog wat user stories gemaakt die in mijn takenbord staan om na mijn SEO-onderzoek eraan te werken. Ik heb vandaag vooral wat meer geleerd over hoe Google eigenlijk websites zoekt, indexeerd en laat zien voor de gebruiker. 
