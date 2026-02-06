@@ -7,9 +7,9 @@ Deze opdracht over SEO heb ik gekregen van mijn stagebegeleider Owen. Het doel v
 SEO staat voor Search Engine Optimization. Zoekmachines zoeken dus jouw website voor info die zij belangrijk vinden voor de gebruiker die het inzet. Hieronder zal ik de criteria neerzetten die belangrijk zijn voor SEO en wat VRcafe wel of niet al inzet.
 
 ## Index
- * [Semantische HTML](semantische-html)
- * [Image Optimization](image-optimization)
- * [Heading levels](heading-levels)
+ * [Semantische HTML](#semantische-html)
+ * [Image Optimization](#image-optimization)
+ * [Heading levels](#heading-levels)
 
 > [!IMPORTANT] 
 > Accessability is optimalisatie voor SE
