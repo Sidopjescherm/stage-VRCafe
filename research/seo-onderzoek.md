@@ -81,9 +81,11 @@ onnodig gebruik van alt tekst:
 <img src="../assets/seo-onderzoek/Een slecht voorbeeld van alt tekst.png">
 De alt teksten die hier staan zijn erg onnodig, want de tekst die in de alt wordt benoemd staat al onder in een `p` tag. In deze gevallen waar het decoratief is zet je een lege alt tag neer(`alt=""`). 
 
+<br>
 het gebruik van alt tekst kan beter:
 <img src="../assets/seo-onderzoek/Een voorbeeld hoe een alt tekst beter kan.png">
 De alt tekst op dit logo is technisch gezien correct, maar een betere benaming zou zijn dat het een terug keer knop is naar de homepagina, want daar dient het ook voor! Dus daar kan wat meer verbetering in.
+</br>
 
 ### Heading levels
 Heading levels zijn erg belanmgrijk voor je website en ook voor zoekmachines. Headings voor zoekmachines zijn een goede manier van het indelen van je belangrijkste tot minst belangrijkste content. Een belangrijke regel voor headings zijn: altijd één `h1` per pagina gebruiken, gebruik logische vervolging van subheadings en houdt de headings descriptief. Een tool als headingsmap laat ook precies zien waar het goed gaat en waar het niet goed gaat.
