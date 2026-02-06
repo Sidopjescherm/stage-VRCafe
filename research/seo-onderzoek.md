@@ -3,9 +3,6 @@
 ## Uitleg
 Deze opdracht over SEO heb ik gekregen van mijn stagebegeleider Owen. Het doel van deze opdracht is het maken van een onderzoek dat gaat over SEO, wat VRcafe niet goed doet en hoe we het kunnen verbeteren.
 
-## Critera van SEO
-SEO staat voor Search Engine Optimization. Zoekmachines zoeken dus jouw website voor info die zij belangrijk vinden voor de gebruiker die het inzet. Hieronder zal ik de criteria neerzetten die belangrijk zijn voor SEO en wat VRcafe wel of niet al inzet.
-
 ## Index
  * [Semantische HTML](#semantische-html)
  * [Image Optimization](#image-optimization)
@@ -74,12 +71,10 @@ Dus niet alleen helpt dit met het maken van afbeeldingen die niet te lang laden,
 ### Hoe doet VRcafe dat?:
 VRcafe zal nog wel moeten werken aan een aantal van deze principes, want een aantal teksten zijn nog niet zo goed als ze kunnen zijn of zijn te overbodig. 
 
-goed gebruik van alt tekst:
-<img src="../assets/seo-onderzoek/een goed gebruik van alt tekst.png">
-Hier worden alt teksten al goed ingezet, behalve het ALT-gedeelte over een sneeuwman en een sneeuw overlay.
-
 onnodig gebruik van alt tekst:
+<img src="../assets/seo-onderzoek/een goed gebruik van alt tekst.png">
 <img src="../assets/seo-onderzoek/Een slecht voorbeeld van alt tekst.png">
+<br></br>
 De alt teksten die hier staan zijn erg onnodig, want de tekst die in de alt wordt benoemd staat al onder in een `p` tag. In deze gevallen waar het decoratief is zet je een lege alt tag neer(`alt=""`). 
 
 <br>
