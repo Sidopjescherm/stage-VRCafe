@@ -10,14 +10,15 @@ SEO staat voor Search Engine Optimization. Zoekmachines zoeken dus jouw website 
  * [Semantische HTML](#semantische-html)
  * [Image Optimization](#image-optimization)
  * [Heading levels](#heading-levels)
+ * [Mobile first](#mobile-first)
 
 > [!IMPORTANT] 
 > Accessability is optimalisatie voor SE
 
-### Semantische HTML
+## Semantische HTML
 Om hoog te komen voor search engines is semantisch HTML schrijven erg van toepassing. Omdat zoekmachines tekst lezen is het belangrijk deze op goede orde te stellen. Je `header` moet een `header` tag hebben, je belangrijkste tekst op een pagina is een `h1` en tekst dat gepaard gaat met een afbeelding die ergens anders op de site herplaatst zou kunnen worden in een `article`. Dit helpt de zoekmachine met een index maken van je website zodat het die het weer kan terugkoppelen aan de gebruiker.
 
-#### Hoe doet VRcafe dat?:
+### Hoe doet VRcafe dat?:
 Het VRcafe heeft een aantal van deze principes wel al in de smiezen, maar ik zie wel dat een aantal opmakingen in componenten die niet logisch zijn. Ik ging kijken naar een goed voorbeeld en ga daarom de navigatie en header nemen daarvoor, want deze hebben wel wat foutieve semantische HTML. Desondanks dat het component MobileNav en DesktopNav heet is de `nav` tag nergens te bekennen. Dit is al heel vreemd, want zo zien de zoekmachines zeker niet dat deze header een navigatie bezit. Wat er wel in dit component wordt gebruikt is de `menu` tag. Een begrijpelijke fout, maar `menu` is iets heel anders dan een `nav`. Wat een `menu` eigenlijk betekent is een ander soort `ul`. Het ziet er nu zo uit:
 ```html
 <section>
@@ -54,7 +55,7 @@ Ik vind dat het VRcafe hier erg slordig mee omgaat, want je hebt geen `nav` tag,
 Ik kan nu wel vertellen wat er belangrijk is, maar het beste zou zijn om te tonen hoe tools als Lighthouse, HeadingsMap en PagespeedInsight het zien:
 <img src="../assets/seo-onderzoek/Screenshot 2026-02-05 161546.png">
 
-### Image optimization
+## Image optimization
 Iets dat nog wel eens wordt overgeslagen is het optimaliseren van afbeeldingen. Nu heb ik het niet alleen over grote afbeeldingen die zullen worden ingeladen, ik heb het ook over alt attributen. Zoekmachines lezen deze attributen die op de afbeelding staan en maken op basis daarvan de keuze om het te laten zien. Bijvoorbeeld iemand die van een berg af aan het skiën is zou de alt tekst moeten hebben: 'Persoon die van een besneeuwde berg aan het skiën is." Dit helpt al een hele boel voor SEO, omdat het actuele informatie is. 
 
 Verder zijn kleinschalige images beter voor een LCP, want wat er nu gebeurt is dat de website langzamer zal worden ingeladen. Kijk maar eens wat PageSpeed Insight ziet:
@@ -70,7 +71,7 @@ Dit kan dus inderdaad veel beter! Dit zal helpen met gebruikers behouden op de m
 ```
 Dus niet alleen helpt dit met het maken van afbeeldingen die niet te lang laden, dit helpt ook met zoekmachines jouw website eruit halen voor optimalisatie qua afbeeldingen. Nu met het gepraat over alt teksten is het niet de bedoeling om dit op alle afbeeldingen te plaatsen waar het niet nodig is, behoudt het op afbeeldingen die iets toevoegen aan de inhoud, niet er extra bovenop. Wat ook nog helpt met grote afbeeldingen is lazy loading. Deze afbeeldingen zullen dan pas worden ingeladen wanneer ze in je viewport komen, dus dat is nog beter voor LCP. 
 
-#### Hoe doet VRcafe dat?:
+### Hoe doet VRcafe dat?:
 VRcafe zal nog wel moeten werken aan een aantal van deze principes, want een aantal teksten zijn nog niet zo goed als ze kunnen zijn of zijn te overbodig. 
 
 goed gebruik van alt tekst:
@@ -87,8 +88,8 @@ het gebruik van alt tekst kan beter:
 De alt tekst op dit logo is technisch gezien correct, maar een betere benaming zou zijn dat het een terug keer knop is naar de homepagina, want daar dient het ook voor! Dus daar kan wat meer verbetering in.
 </br>
 
-### Heading levels
-Heading levels zijn erg belanmgrijk voor je website en ook voor zoekmachines. Headings voor zoekmachines zijn een goede manier van het indelen van je belangrijkste tot minst belangrijkste content. Een belangrijke regel voor headings zijn: altijd één `h1` per pagina gebruiken, gebruik logische vervolging van subheadings en houdt de headings descriptief. Een tool als headingsmap laat ook precies zien waar het goed gaat en waar het niet goed gaat.
+## Heading levels
+Heading levels zijn erg belangrijk voor je website en ook voor zoekmachines. Headings voor zoekmachines zijn een goede manier van het indelen van je belangrijkste tot minst belangrijkste content. Een belangrijke regel voor headings zijn: altijd één `h1` per pagina gebruiken, gebruik logische vervolging van subheadings en houdt de headings descriptief. Een tool als headingsmap laat ook precies zien waar het goed gaat en waar het niet goed gaat.
 
 ### Hoe doet VRcafe dat?:
 VRcafe behoudt de heading levels op een goed niveau, maar er zijn hier en daar nog wel wat puntjes om op te letten. De meeste headings die worden gebruikt in de website zijn correct neergezet zoals deze headings:
@@ -121,7 +122,31 @@ Ook met behulp van een site crawler zoals [Screaming Frog](https://www.screaming
 <img src="../assets/seo-onderzoek/drie h1&apos;s op een pagina.png">
 </br>
 
+## Mobile first
+Mobile first is een standaard dat de laatse jaren erg is gestegen, omdat veel mensen vaker hun mobiel erbij pakken om iets op te zoeken inplaats van op de laptop. Dus ervoor zorgen dat je website het beste loopt op mobiel zou het belangrijkste moeten zijn, maar uit mijn onderzoek zie ik helaas dit niet goed terugkomen. Een mobile versie van een website zou het belangrijkste aspect moeten zijn, zodat het voor de meeste mensen een toegankelijk iets is. Waarom hoort dit bij SEO? Mensen komen via hun mobiel op jouw website en jouw mobiele website keert ze af of laat ze verder scrollen. Dus al kom je bovenaan de zoekresultaten, je gebruikers behouden is het belangrijkste. 
 
+### Hoe doet VRcafe dat?
+<img src="../assets/seo-onderzoek/Diagnostics for mobile.png">
+<img src="../assets/seo-onderzoek/Performance op mobile.png">
+Zoals we kunnen zien hierboven in de test is het echt drastisch lager dan desktop, wat best schrikken is wanneer mobile eigenlijk de belangrijkste versie hiervan is. Iets dat ik meteen zie is ongebruikte JS en CSS verwijderen en dat is altijd belangrijk om weg te halen, want code die niet wordt gebruikt is zonde. 
+
+Wat ook nog aangekaart moet worden is het verminderen van de main-thread work dat vooral te lang duurt door het te valideren van Javascript. Daar doet het 3,6 seconden over en dat is wel echt een te lange tijd.
+
+Als laatste nog de laadtijden op de website op verschillende netwerken:
+<br>
+    3G:
+    <img src="../assets/seo-onderzoek/8,5 seconden op 3g.png">
+</br>
+
+<br>
+    4G langzaam:
+    <img src="../assets/seo-onderzoek/2.3 seconden langzaam 4g.png">
+</br>
+
+<br>
+    4G snel:
+    <img src="../assets/seo-onderzoek/0.5 seconden snelle 4g.png">
+</br>
 
 ## Bronnen
 - [Guide to SEO with Frontend](https://medium.com/@msmt0452/a-comprehensive-guide-to-seo-optimization-for-frontend-developers-eaf79bc1e1d2)
