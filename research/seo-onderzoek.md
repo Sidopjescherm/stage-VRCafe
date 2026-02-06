@@ -58,6 +58,7 @@ Ik kan nu wel vertellen wat er belangrijk is, maar het beste zou zijn om te tone
 Iets dat nog wel eens wordt overgeslagen is het optimaliseren van afbeeldingen. Nu heb ik het niet alleen over grote afbeeldingen die zullen worden ingeladen, ik heb het ook over alt attributen. Zoekmachines lezen deze attributen die op de afbeelding staan en maken op basis daarvan de keuze om het te laten zien. Bijvoorbeeld iemand die van een berg af aan het skiën is zou de alt tekst moeten hebben: 'Persoon die van een besneeuwde berg aan het skiën is." Dit helpt al een hele boel voor SEO, omdat het actuele informatie is. 
 
 Verder zijn kleinschalige images beter voor een LCP, want wat er nu gebeurt is dat de website langzamer zal worden ingeladen. Kijk maar eens wat PageSpeed Insight ziet:
+<img src="../assets/seo-onderzoek/pagespeed insigth afbeeldingbesparing.png">
 
 Dit kan dus inderdaad veel beter! Dit zal helpen met gebruikers behouden op de mobiele website. Dit is op te lossen door gebruik te maken van het `picture` element in de HTML. Deze tag kan je gebruiken om tegen de browser te vertellen dat er een plaatje is, maar je kan zelf het format bepalen waar het uitkomt. Zo zou het eruit zien:
 ```html
