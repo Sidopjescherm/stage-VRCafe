@@ -103,7 +103,6 @@ visueel:
 Maar verder in de pagina zijn er reviews van gamers en deze is helaas niet goed qua opmaak. We springen van een `h2` meteen naar een `h4` en op de VR at home is er gebruik gemaakt van twee `h2`'s, maar het is logischer om hier een `h2` en `h3` van te maken. Als we dit oplossen dan komt er vast en zeker een betere SEO score uit dan dat er nu al is.
 </br>
 
-
 Review van gamers op de homepage:
 <br>
 <img src="../assets/seo-onderzoek/heading levels homepage.png">
@@ -115,6 +114,11 @@ VR at home heading levels:
 </br>
 visueel:
 <img src="../assets/seo-onderzoek/VR at home en leukstje uitje voor thuis visueel.png">
+
+<br>
+Ook met behulp van een site crawler zoals [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/#) zie ik dat er meerdere h1 elementen worden gebruikt in één document. Dat is zeker niet de bedoeling, want zo zien zoekmachines niet wat je belangrijkste content is op de pagina.
+<img src="../assets/seo-onderzoek/drie h1&apos;s op een pagina.png">
+</br>
 
 ## Bronnen
 - [Guide to SEO with Frontend](https://medium.com/@msmt0452/a-comprehensive-guide-to-seo-optimization-for-frontend-developers-eaf79bc1e1d2)
