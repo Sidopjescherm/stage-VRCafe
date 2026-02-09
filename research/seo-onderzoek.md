@@ -4,9 +4,6 @@
 Deze opdracht over SEO heb ik gekregen van mijn stagebegeleider Owen. Het doel van deze opdracht is het maken van een onderzoek dat gaat over SEO, wat VRcafe niet goed doet en hoe we het kunnen verbeteren.
 
 ## Index
-- [SEO Onderzoek](#seo-onderzoek)
-  - [Uitleg](#uitleg)
-  - [Index](#index)
   - [Semantische HTML](#semantische-html)
     - [Headings](#headings)
     - [Correct gebruik van elementen](#correct-gebruik-van-elementen)
