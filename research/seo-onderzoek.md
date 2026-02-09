@@ -4,118 +4,85 @@
 Deze opdracht over SEO heb ik gekregen van mijn stagebegeleider Owen. Het doel van deze opdracht is het maken van een onderzoek dat gaat over SEO, wat VRcafe niet goed doet en hoe we het kunnen verbeteren.
 
 ## Index
- * [Semantische HTML](#semantische-html)
- * [Image Optimization](#image-optimization)
- * [Heading levels](#heading-levels)
- * [Mobile first](#mobile-first)
+- [SEO Onderzoek](#seo-onderzoek)
+  - [Uitleg](#uitleg)
+  - [Index](#index)
+  - [Semantische HTML](#semantische-html)
+    - [Headings](#headings)
+    - [Correct gebruik van elementen](#correct-gebruik-van-elementen)
+    - [Tabtest](#tabtest)
+  - [Image optimization](#image-optimization)
+    - [Grootte afbeelding](#grootte-afbeelding)
+    - [Alt beschrijving](#alt-beschrijving)
+  - [Mobile first](#mobile-first)
+    - [Hoe doet VRcafe dat?](#hoe-doet-vrcafe-dat)
+  - [Bronnen](#bronnen)
+
 
 > [!IMPORTANT] 
 > Accessability is optimalisatie voor SE
 
 ## Semantische HTML
-Om hoog te komen voor search engines is semantisch HTML schrijven erg van toepassing. Omdat zoekmachines tekst lezen is het belangrijk deze op goede orde te stellen. Je `header` moet een `header` tag hebben, je belangrijkste tekst op een pagina is een `h1` en tekst dat gepaard gaat met een afbeelding die ergens anders op de site herplaatst zou kunnen worden in een `article`. Dit helpt de zoekmachine met een index maken van je website zodat het die het weer kan terugkoppelen aan de gebruiker.
+Voor gebruikers en voor zoekmachines is semantische HTML belangrijk! Iets waar mensen niet vaak op letten heeft zeker wel impact. 
 
-### Hoe doet VRcafe dat?:
-Het VRcafe heeft een aantal van deze principes wel al in de smiezen, maar ik zie wel dat een aantal opmakingen in componenten die niet logisch zijn. Ik ging kijken naar een goed voorbeeld en ga daarom de navigatie en header nemen daarvoor, want deze hebben wel wat foutieve semantische HTML. Desondanks dat het component MobileNav en DesktopNav heet is de `nav` tag nergens te bekennen. Dit is al heel vreemd, want zo zien de zoekmachines zeker niet dat deze header een navigatie bezit. Wat er wel in dit component wordt gebruikt is de `menu` tag. Een begrijpelijke fout, maar `menu` is iets heel anders dan een `nav`. Wat een `menu` eigenlijk betekent is een ander soort `ul`. Het ziet er nu zo uit:
-```html
-<section>
-    <a></a>
-    <li></li>
+### Headings
+ Headings en subheadings zijn de leesvolgorde van je content en zouden van `h1` tot en met `h6` ingedeeld moeten worden. Iets dat nog niet correct gaat volgens de tool Headingsmap:
+<br>
+    <img src="../assets/seo-onderzoek/Semantische html/heading levels homepage.png">
+    <img src="../assets/seo-onderzoek/Semantische html/drie h1&apos;s op een pagina.png">
+    <img src="../assets/seo-onderzoek/Semantische html/incorrecte heading VR at home en leukste uitje in code.png">
+</br>
+Door je headings en subheadings correct neer te zetten help je de zoekmachine met het correct indexeren van je website. Voor gebruikers helpen headings ook met de leesvolgorde van je content zodat zij een beetje kunnen 'skimmen' voor de juiste info. Ook een belangrijk iets om te onthouden is het gebruik van één `h1` element.
 
-    <menu>
-        <section>
-            <div>
-                <div>
-                    <section>
-                        <div></div>
-                        <a></a>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </menu>
-</section>
-```
-Ik vind dat het VRcafe hier erg slordig mee omgaat, want je hebt geen `nav` tag, een losstaande `li` zonder parent, een `menu` zonder `li` en teveel `section` en `div` die eigenlijk alleen voor minimale styling zorgen. Oftwel het is enorm zonde om het zo op te maken, want zo krijgt de zoekmachine geen goede index van je pagina. Een meer logische aanpak van dit component zou zijn:
-```html
-<nav>
-    <ul>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-        <li><a></a></li>
-    </ul>
-</nav>
-```
-Ik kan nu wel vertellen wat er belangrijk is, maar het beste zou zijn om te tonen hoe tools als Lighthouse, HeadingsMap en PagespeedInsight het zien:
-<img src="../assets/seo-onderzoek/Screenshot 2026-02-05 161546.png">
+### Correct gebruik van elementen
+Voor een tekst op de homepage zie ik ook een `h2` met daarin een `span` die verwijst naar "Activiteiten," maar semantisch is dit niet correct. Omdat activiteiten het punt van aandacht is, zou het een `em` of een `strong` moeten worden. Dit zorgt ervoor dat het niet een generiek gebruik is van een element, maar dat het duidelijk ook wat te betekenen heeft voor de gebruiker en zoekmachine. 
+<br>
+    <img src="../assets/seo-onderzoek/span als tekst.png">
+    <img src="../assets/seo-onderzoek/populaire-activiteiten-visueel.png">
+</br>
+
+### Tabtest
+Voor mensen die een toetsenbord gebruiken, maar geen muis gebruiken zij de tab-toets om te navigeren. Voor zoekmachines is dit niet belangrijk, maar wel voor gebruikers op de website. Als een gebruiker niet duidelijk door de pagina kan navigeren is het een slechte UX en dit is het geval bij de knoppen en het menu. Het logo wordt wel herkend, maar niet het menu om te navigeren en dat is zeker niet een correct iets voor navigatie.
+<br>
+    <img src="../assets/tab wel logo.png">
+    <img src="../assets/geen tab menu.png">
+</br>
+Verder staat er een `div` samen met een `a` op de pagina voor het boeken van een activiteit. Dit zorgt ervoor dat je eerst op de `div` staat en daarna op de `a`. Oftwel je doet er dubbel zolang over om op een knop te focusen en dubbel zo lang over iets doen is al dubbel teveel voor UX.
+<br>
+    <img src="../assets/Screenshot 2026-02-03 153432.png">
+    <img src="../assets/Screenshot 2026-02-03 153442.png">
+</br>
+
 
 ## Image optimization
-Iets dat nog wel eens wordt overgeslagen is het optimaliseren van afbeeldingen. Nu heb ik het niet alleen over grote afbeeldingen die zullen worden ingeladen, ik heb het ook over alt attributen. Zoekmachines lezen deze attributen die op de afbeelding staan en maken op basis daarvan de keuze om het te laten zien. Bijvoorbeeld iemand die van een berg af aan het skiën is zou de alt tekst moeten hebben: 'Persoon die van een besneeuwde berg aan het skiën is." Dit helpt al een hele boel voor SEO, omdat het actuele informatie is. 
+Voor afbeeldingen is het belangrijk om een bepaalde grootte ervoor te kiezen en een beschrijvende alt. Een minder groot bestand helpt met een kortere tijd met het inladen van de afbeelding en een alternatieve tekst helpt met het beschrijven indien nodig.
 
-Verder zijn kleinschalige images beter voor een LCP, want wat er nu gebeurt is dat de website langzamer zal worden ingeladen. Kijk maar eens wat PageSpeed Insight ziet:
-<img src="../assets/seo-onderzoek/pagespeed insigth afbeeldingbesparing.png">
-
-Dit kan dus inderdaad veel beter! Dit zal helpen met gebruikers behouden op de mobiele website. Dit is op te lossen door gebruik te maken van het `picture` element in de HTML. Deze tag kan je gebruiken om tegen de browser te vertellen dat er een plaatje is, maar je kan zelf het format bepalen waar het uitkomt. Zo zou het eruit zien:
-```html
-<picture>
-    <source srcset="VRcafe-logo.webp" type="image/webp">
-    <source srcset="VRcafe-logo.avif" type="image/avif">
-    <img src="VRcafe-logo.jpg" alt="terug naar de homepagina van het VRcafe" loading="lazy">
-</picture>
-```
-Dus niet alleen helpt dit met het maken van afbeeldingen die niet te lang laden, dit helpt ook met zoekmachines jouw website eruit halen voor optimalisatie qua afbeeldingen. Nu met het gepraat over alt teksten is het niet de bedoeling om dit op alle afbeeldingen te plaatsen waar het niet nodig is, behoudt het op afbeeldingen die iets toevoegen aan de inhoud, niet er extra bovenop. Wat ook nog helpt met grote afbeeldingen is lazy loading. Deze afbeeldingen zullen dan pas worden ingeladen wanneer ze in je viewport komen, dus dat is nog beter voor LCP. 
-
-### Hoe doet VRcafe dat?:
-VRcafe zal nog wel moeten werken aan een aantal van deze principes, want een aantal teksten zijn nog niet zo goed als ze kunnen zijn of zijn te overbodig. 
-
-onnodig gebruik van alt tekst:
-<img src="../assets/seo-onderzoek/een goed gebruik van alt tekst.png">
-<img src="../assets/seo-onderzoek/Een slecht voorbeeld van alt tekst.png">
-<br></br>
-De alt teksten die hier staan zijn erg onnodig, want de tekst die in de alt wordt benoemd staat al onder in een `p` tag. In deze gevallen waar het decoratief is zet je een lege alt tag neer(`alt=""`). 
-
+### Grootte afbeelding
+In het geval van de grootte speelt de FCP en LCP een grote rol. FCP is de eerste tekst of afbeelding zal worden geladen en LCP is de grootste tekst of afbeelding die zal worden geladen.
 <br>
-het gebruik van alt tekst kan beter:
-<img src="../assets/seo-onderzoek/Een voorbeeld hoe een alt tekst beter kan.png">
-De alt tekst op dit logo is technisch gezien correct, maar een betere benaming zou zijn dat het een terug keer knop is naar de homepagina, want daar dient het ook voor! Dus daar kan wat meer verbetering in.
+    Desktop:
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/desktop/statistieken desktop.png">
+    Mobiel:
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/statistieken mobile.png">
+</br>
+Voor desktop is binnen 0.4 seconden de eerste afbeelding ingeladen en de grootste afbeelding wordt in 2.4 seconden ingeladen. Helaas voor mobiel is het erg drastisch, want de eerste afbeelding wordt ingeladen in 2.4 seconden en de grootste afbeelding is in 9.9 seconden ingeladen. Voor gebruikers is dit een hele trage laad tijd en zorg je er niet voor dat iemand verder zal klikken en zo verlies je klanten. Omdat mensen vaker hun mobiel gebruiken dan een desktop is het belangrijk om voor mobiel deze afbeeldingen te optimaliseren. 
+<br>
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/desktop/lcp verzoekdetectie desktop.png">
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/LCP verzoekdetectie.png">
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/desktop/afbeelding verbetering desktop.png">
 </br>
 
-## Heading levels
-Heading levels zijn erg belangrijk voor je website en ook voor zoekmachines. Headings voor zoekmachines zijn een goede manier van het indelen van je belangrijkste tot minst belangrijkste content. Een belangrijke regel voor headings zijn: altijd één `h1` per pagina gebruiken, gebruik logische vervolging van subheadings en houdt de headings descriptief. Een tool als headingsmap laat ook precies zien waar het goed gaat en waar het niet goed gaat.
-
-### Hoe doet VRcafe dat?:
-VRcafe behoudt de heading levels op een goed niveau, maar er zijn hier en daar nog wel wat puntjes om op te letten. De meeste headings die worden gebruikt in de website zijn correct neergezet zoals deze headings:
+### Alt beschrijving
+Alt zorgt ervoor dat de zoekmachine jouw afbeeldingen kan lezen en de woorden die je beschrijft worden ook meegenomen in SEO. Wanneer ik de Pagespeed Insight test doe zie ik ook dat er meerdere malen voor SEO en Accessability wordt gehamerd op ALT voor afbeeldingen. Dus als we alt beschrijvingen toevoegen waar het nodig is en alt tekst veranderen naar correcte beschrijvingen helpt dit zeker met zoekresultaten. 
 <br>
-<img src="../assets/seo-onderzoek/correcte heading wist je dat.png">
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/afbeeldingen hebben geen alt mobile.png">
 </br>
-
+Belangrijk voor alt teksten is ook onnodige verwijderen, want teveel alt teksten kan je website verkeerd indexen of de zoekmachine ziet het als teveel hameren op SEO. Voorbeelden als dit moeten dan dus verwijderd worden:
 <br>
-visueel:
-<img src="../assets/seo-onderzoek/wist je dat.png">
-
-Maar verder in de pagina zijn er reviews van gamers en deze is helaas niet goed qua opmaak. We springen van een `h2` meteen naar een `h4` en op de VR at home is er gebruik gemaakt van twee `h2`'s, maar het is logischer om hier een `h2` en `h3` van te maken. Als we dit oplossen dan komt er vast en zeker een betere SEO score uit dan dat er nu al is.
+    <img src="../assets/seo-onderzoek/Alt teksten/onnodig alt tekst.png">
+    <img src="../assets/seo-onderzoek/Alt teksten/Een slecht voorbeeld van alt tekst.png">
 </br>
-
-Review van gamers op de homepage:
-<br>
-<img src="../assets/seo-onderzoek/heading levels homepage.png">
-</br>
-
-<br>
-VR at home heading levels:
-<img src="../assets/seo-onderzoek/incorrecte heading VR at home en leukste uitje in code.png">
-</br>
-visueel:
-<img src="../assets/seo-onderzoek/VR at home en leukstje uitje voor thuis visueel.png">
-
-
-Ook met behulp van een site crawler zoals [Screaming Frog](https://www.screamingfrog.co.uk/seo-spider/#) zie ik dat er meerdere h1 elementen worden gebruikt in één document. Dat is zeker niet de bedoeling, want zo zien zoekmachines niet wat je belangrijkste content is op de pagina.
-<br>
-<img src="../assets/seo-onderzoek/drie h1&apos;s op een pagina.png">
-</br>
+Alt teksten als dit zorgt ervoor dat de zoekmachine tweemaal de tekst indexeert wat enorm zonde is, want de afbeeldingen dienen alleen als visuele toevoeging. Hiervoor zou dus een lege alt gebruikt moeten worden.
 
 ## Mobile first
 Mobile first is een standaard dat de laatse jaren erg is gestegen, omdat veel mensen vaker hun mobiel erbij pakken om iets op te zoeken inplaats van op de laptop. Dus ervoor zorgen dat je website het beste loopt op mobiel zou het belangrijkste moeten zijn, maar uit mijn onderzoek zie ik helaas dit niet goed terugkomen. Een mobile versie van een website zou het belangrijkste aspect moeten zijn, zodat het voor de meeste mensen een toegankelijk iets is. Waarom hoort dit bij SEO? Mensen komen via hun mobiel op jouw website en jouw mobiele website keert ze af of laat ze verder scrollen. Dus al kom je bovenaan de zoekresultaten, je gebruikers behouden is het belangrijkste. 
