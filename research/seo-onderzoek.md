@@ -15,7 +15,10 @@ Deze opdracht over SEO heb ik gekregen van mijn stagebegeleider Owen. Het doel v
     - [Grootte afbeelding](#grootte-afbeelding)
     - [Alt beschrijving](#alt-beschrijving)
   - [Mobile first](#mobile-first)
-    - [Hoe doet VRcafe dat?](#hoe-doet-vrcafe-dat)
+    - [Gedwongen Dynamische Aanpassing](#gedwongen-dynamische-aanpassing)
+    - [Renderblocking](#renderblocking)
+    - [Verminderen JS en CSS](#verminderen-js-en-css)
+  - [Samenvatting](#samenvatting)
   - [Bronnen](#bronnen)
 
 
@@ -85,29 +88,34 @@ Belangrijk voor alt teksten is ook onnodige verwijderen, want teveel alt teksten
 Alt teksten als dit zorgt ervoor dat de zoekmachine tweemaal de tekst indexeert wat enorm zonde is, want de afbeeldingen dienen alleen als visuele toevoeging. Hiervoor zou dus een lege alt gebruikt moeten worden.
 
 ## Mobile first
-Mobile first is een standaard dat de laatse jaren erg is gestegen, omdat veel mensen vaker hun mobiel erbij pakken om iets op te zoeken inplaats van op de laptop. Dus ervoor zorgen dat je website het beste loopt op mobiel zou het belangrijkste moeten zijn, maar uit mijn onderzoek zie ik helaas dit niet goed terugkomen. Een mobile versie van een website zou het belangrijkste aspect moeten zijn, zodat het voor de meeste mensen een toegankelijk iets is. Waarom hoort dit bij SEO? Mensen komen via hun mobiel op jouw website en jouw mobiele website keert ze af of laat ze verder scrollen. Dus al kom je bovenaan de zoekresultaten, je gebruikers behouden is het belangrijkste. 
+Zoals ik eerder besproken heb in dit onderzoek is dat mensen meer hun mobiel gebruiken dan desktop om websites te bezoeken. Nu in deze testen kreeg ik vooral terug dat het op mobiel niet goed gaat en ik zal nog wat meer resultaten laten zien.
 
-### Hoe doet VRcafe dat?
-<img src="../assets/seo-onderzoek/Diagnostics for mobile.png">
-<img src="../assets/seo-onderzoek/Performance op mobile.png">
-Zoals we kunnen zien hierboven in de test is het echt drastisch lager dan desktop, wat best schrikken is wanneer mobile eigenlijk de belangrijkste versie hiervan is. Iets dat ik meteen zie is ongebruikte JS en CSS verwijderen en dat is altijd belangrijk om weg te halen, want code die niet wordt gebruikt is zonde. 
-
-Wat ook nog aangekaart moet worden is het verminderen van de main-thread work dat vooral te lang duurt door het te valideren van Javascript. Daar doet het 3,6 seconden over en dat is wel echt een te lange tijd.
-
-Als laatste nog de laadtijden op de website op verschillende netwerken:
+### Gedwongen Dynamische Aanpassing
+Wanneer Javascript geometrische eigenschappen opvraagt nadat stijlen een aantal van de elementen heeft veranderd kan dit je prestaties enorm achter laten lopen. Oftewel wat dit betekent is dat als iemand ergens op zal klikken als een knop is de kans groot dat het een aantal seconden later verschuift en mensen wellicht ergens anders op zullen klikken waardoor je irritatie opwekt. 
 <br>
-    3G:
-    <img src="../assets/seo-onderzoek/8,5 seconden op 3g.png">
+<img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/Gedwongen dynamische aanpassing mobile.png">
 </br>
 
+### Renderblocking
+Omdat in het script eerst een aantal verzoeken worden aangemaakt duurt het nog langer om de content neer te zetten. Dus wat er moet gebeuren is ervoor zorgen dat het script z'n verzoeken pas maakt nadat de pagina is ingeladen. 
 <br>
-    4G langzaam:
-    <img src="../assets/seo-onderzoek/2.3 seconden langzaam 4g.png">
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/renderblocking mobile.png">
 </br>
 
+### Verminderen JS en CSS
+Iets dat ook helpt met UX is het verminderen van Javascript en CSS en het verwijderen van onnodige CSS en JS. Dit zorgt ervoor dat de laadtijd van de pagina minder zal worden en onnodige code niet zal worden gestuurd naar de browser.
 <br>
-    4G snel:
-    <img src="../assets/seo-onderzoek/0.5 seconden snelle 4g.png">
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/beperk css mobile.png">
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/beperk JS mobile.png">
+</br>
+
+## Samenvatting
+Dit onderzoek dient als een begin voor het verbeteren van de website, want zo zien we wat er beter kan. Waar we aan zullen moeten werken is het verbeteren van de website op mobiel, het verwijderen van onnodige code, het verbeteren van verzoeken en het verbeteren van de kwaliteit qua code. Want al ziet het testresultaat er prima uit, betekent het niet dat we moeten stoppen met het te verbeteren.
+<br>
+    Mobiel:
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/mobile/lighthouse test performance, SEO, accessability en best practices.png">
+    Desktop:
+    <img src="../assets/seo-onderzoek/tests/pagespeed insight/desktop/lighthouse performance, SEO, accessability en best practices.png">
 </br>
 
 ## Bronnen
