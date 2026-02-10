@@ -10,7 +10,7 @@ In this presentation Ivan and I will show what we found when doing our research 
     - [Forced Synchronous Layout](#forced-synchronous-layout)
     - [Render Blocking](#render-blocking)
     - [Reducing JS and CSS](#reducing-js-and-css)
-    = [Scaling Elements](#scaling-of-elements)
+    - [Scaling Elements](#scaling-of-elements)
 
 ## Semantic HTML
 Semantic HTML is crucial for both users and search engines! Aspects that people often overlook certainly have a significant impact.
