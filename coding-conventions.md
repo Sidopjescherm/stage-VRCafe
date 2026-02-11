@@ -1,7 +1,20 @@
 # Coding conventions for VRcafe
 
+## Commits
+When writing commits for updating the code you need to write a descriptive title and in the commit message a condense summary of what you fixed. The way a commit message should be written is: 
+(fix, feature or documentation) (number of the issue you're fixing) (title of the issue)
+(summary of the isssue you've been working on)
+
+### Commit often/Conventional commits
+To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work.
+
+## Standards
+A great way to have a consistent status in SEO, Performance and Accessability is PE(progressivly enhanced.) This standard not only helps making your website usable for most people, it also helps search engines with indexing your content while still getting to have the 'fun' stuff. 
+
 ## Naming things
-Naming things is een important part for coding. Keep your classes, id's, functions and `const`'s descriptive of what they are and keep to the style of writing. Use kebabcase for CSS and use camelCase for Javascript. Lastly don't shorten or nickname these names, write them out fully.
+- Keep your classes, id's, functions and `const`'s descriptive of what they are and keep to the style of writing. 
+- Use kebabcase for CSS and use camelCase for Javascript. 
+- Lastly don't shorten or nickname these names, write them out fully.
 > [!CAUTION]
 > This is not the right way
 ```css
@@ -18,7 +31,7 @@ Naming things is een important part for coding. Keep your classes, id's, functio
 ```
 
 ## Writing HTML
-Use semantic and logical HTML elements when creating a webpage. When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. When writing HTML and nesting make sure to use intendation.
+Use semantic and logical HTML elements when creating a webpage. When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. When writing HTML and nesting make sure to use 1 tab indentation.
 > [!CAUTION]
 > This is not the right way
 ```html
@@ -31,7 +44,39 @@ Use semantic and logical HTML elements when creating a webpage. When a link is u
 ```
 
 ## Writing CSS
-
-## Using tailwindCSS
+- When writing CSS make sure to use 1 tab indentation for clearer code. 
+- Follow how the HTML has been written and write the CSS in the same way. Don't Repeat Yourself and use utility classes. 
+- For future pages it would be the best to not use utility-first frameworks like TailwindCSS. Vanilla CSS could get you far enough.
+- End your CSS lines with a semicolon " ; " 
+- Use comments to explain code for youself and other developers
+- Use @supports to progressivley enhance your elements
+> [!CAUTION]
+> This is not the right way
+```css
+    article{
+        background-color: var(--primary-color)
+        border-radius: 20%
+        corner-shape: bevel
+    }
+```
+> [!TIP]
+> This is the right way
+```css
+    article{
+        background-color: var(--primary-color);
+        border-radius: 20%;
+        /* For users that use browsers that support corner-shape  */
+        @supports (corner-shape: bevel) {
+            corner-shape: bevel;
+        }
+    }
+```
 
 ## Writing Javascript
+- Use 1 tab indentation for clearer code
+- Unlike CSS do not end your lines with a semicolon " ; "
+- Use comments to explain code for youself and other developers
+
+### Using const, let or var
+- When writing Javascript it is key to always try to use const
+- If a variable it's value will change after initalization it should be a let
