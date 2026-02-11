@@ -31,7 +31,9 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 ```
 
 ## Writing HTML
-Use semantic and logical HTML elements when creating a webpage. When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. When writing HTML and nesting make sure to use 1 tab indentation.
+- Use semantic and logical HTML elements when creating a webpage. 
+- When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. 
+- When writing HTML and nesting make sure to use 1 tab indentation.
 > [!CAUTION]
 > This is not the right way
 ```html
