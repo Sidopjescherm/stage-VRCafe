@@ -1,7 +1,25 @@
-# Coding conventions for VRcafe
+## Dev lifecycle
+<img src="/assets/coding-convention/dev-lifecycle.jpg">
+In our way of coding we need to have a development lifecycle so that every component we have is up to our new standard. 
+- Analyse: know who you're making this for and what they want from this page or component.
+- Design: know what the user needs to feel welcome and motivated to interact with the website.
+- Build: use accessable and progressivly enhanced practices to build better code.
+- Test: test the page or component on lighthouse, validatortests, user tests, browsertest and device test.
+- Integrate: by the use of pull request you integrate the code made from a branch and merge it into the dev branch.
 
+### Pull request and branches
+For the branches in this project we should have two main 'trees.' The main and the dev should always be there, but the other branches should be deleted via the Github desktop way of deleting a branch. Another 
+<img src="/assets/coding-convention/branches.jpg">
 
-## Commits
+#### Pull request
+For pull requests it is important that a few rules are applied to help your colleagues test on a professional level. here's the way to write a pull request:
+1. Title of the pull request
+2. Description of what you've made
+3. Visual documentation of what you've made
+4. Which tests you've performed on the page or component
+5. What you want your colleagues to test and review
+
+### Commits
 When writing commits for updating the code you need to write a descriptive title and in the commit message a condense summary of what you fixed. The way a commit message should be written is: 
 ```
 (fix, feature or documentation) (number of the issue you're fixing) (title of the issue)
@@ -10,16 +28,16 @@ When writing commits for updating the code you need to write a descriptive title
 (summary of the isssue you've been working on)
 ```
 <br>
-    <img src="/assets/commit-message.png">
+    <img src="/assets/coding-convention/commit-message.png">
 </br>
 
-### Commit often/Conventional commits
+#### Commit often/Conventional commits
 To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work.
 
-## Standards
+### Standards
 A great way to have a consistent status in SEO, Performance and Accessability is PE(progressivly enhanced.) This standard not only helps making your website usable for most people, it also helps search engines with indexing your content while still getting to have the 'fun' stuff. 
 
-## Naming things
+### Naming things
 - Keep your classes, id's, functions and `const`'s descriptive of what they are and keep to the style of writing. 
 - Use kebabcase for CSS and use camelCase for Javascript. 
 - Lastly don't shorten or nickname these names, write them out fully.
@@ -38,7 +56,9 @@ A great way to have a consistent status in SEO, Performance and Accessability is
     --accent-color: #FF00FF;
 ```
 
-## Writing HTML
+## Coding conventions for VRcafe
+
+### Writing HTML
 - Use semantic and logical HTML elements when creating a webpage. 
 - When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. 
 - When writing HTML and nesting make sure to use 1 tab indentation.
@@ -53,7 +73,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
     <a href="example.com">
 ```
 
-## Writing CSS
+### Writing CSS
 - When writing CSS make sure to use 1 tab indentation for clearer code. 
 - Follow how the HTML has been written and write the CSS in the same way. Don't Repeat Yourself and use utility classes. 
 - For future pages it would be the best to not use utility-first frameworks like TailwindCSS. Vanilla CSS could get you far enough.
@@ -82,7 +102,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
     }
 ```
 
-## Writing Javascript
+### Writing Javascript
 - Use 1 tab indentation for clearer code
 - Unlike CSS do not end your lines with a semicolon " ; "
 - Use comments to explain code for youself and other developers
@@ -108,12 +128,12 @@ A great way to have a consistent status in SEO, Performance and Accessability is
         activiteitenLink.classlist.add("hover-leave")
     }
 ```
-### Using const, let or var
+#### Using const, let or var
 - When writing Javascript it is key to always try to use `const`
 - If a variable it's value will change after initalization it should be a let
 
-## TailwindCSS
+### TailwindCSS
 Utility-first frameworks like TailwindCSS actually don't help much more than regular CSS does. So the best thing would be to slowly roll back the TailwindCSS and replace it with vanilla CSS. 
 
-## REACT
+### REACT
 For components that are still made in React it would be smart to transfer them into Astro components due to the Javascript shipping in React.
