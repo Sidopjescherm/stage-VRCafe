@@ -105,5 +105,5 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 ```
 
 ### Using const, let or var
-- When writing Javascript it is key to always try to use const
+- When writing Javascript it is key to always try to use `const`
 - If a variable it's value will change after initalization it should be a let
