@@ -10,7 +10,7 @@ When writing commits for updating the code you need to write a descriptive title
 (summary of the isssue you've been working on)
 ```
 <br>
-    <img src="../stage-VRCafe/assets/commit message.png">
+    <img src="../stage-VRCafe/assets/commit-message.png">
 </br>
 
 ### Commit often/Conventional commits
