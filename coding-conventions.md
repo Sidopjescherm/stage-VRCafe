@@ -1,3 +1,5 @@
+# Coding Conventions VRcafe
+
 ## Dev lifecycle
 <img src="/assets/coding-convention/dev-lifecycle.jpg" width="400">
 In our way of coding we need to have a development lifecycle so that every component we have is up to our new standard. 
