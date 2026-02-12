@@ -68,6 +68,10 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 - End your coding lines in CSS with a semicolon " ; "
 - Do not end your coding lines in Javascript with a semicolon " ; "
 - Use comments to explain code for youself and other developers. To successfully write comments about the code you'll need the following:
+    1. Explain in two sentences max what it is you're making
+    2. What certain functions need to do 
+    3. How it will impact the user or developer
+
 ### Writing HTML
 - Use semantic and logical HTML elements when creating a webpage. 
 - When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. 
@@ -83,7 +87,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 ```
 
 ### Writing CSS
-- Follow how the HTML has been written and write the CSS in the same way. Don't Repeat Yourself and use utility classes. 
+- Follow how the HTML has been written and write the CSS in the same way. 
 - For future pages it would be the best to not use utility-first frameworks like TailwindCSS. Vanilla CSS could get you far enough.
 - Use @supports to progressivley enhance your elements
 > [!CAUTION]
