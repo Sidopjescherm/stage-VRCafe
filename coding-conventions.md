@@ -63,10 +63,14 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 
 ## Coding conventions for VRcafe
 
+### Syntax
+- Use 1 tab indetation
+- End your coding lines in CSS with a semicolon " ; "
+- Do not end your coding lines in Javascript with a semicolon " ; "
+- Use comments to explain code for youself and other developers. To successfully write comments about the code you'll need the following:
 ### Writing HTML
 - Use semantic and logical HTML elements when creating a webpage. 
 - When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. 
-- When writing HTML and nesting make sure to use 1 tab indentation.
 > [!CAUTION]
 > This is not the right way
 ```html
@@ -79,11 +83,8 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 ```
 
 ### Writing CSS
-- When writing CSS make sure to use 1 tab indentation for clearer code. 
 - Follow how the HTML has been written and write the CSS in the same way. Don't Repeat Yourself and use utility classes. 
 - For future pages it would be the best to not use utility-first frameworks like TailwindCSS. Vanilla CSS could get you far enough.
-- End your CSS lines with a semicolon " ; " 
-- Use comments to explain code for youself and other developers
 - Use @supports to progressivley enhance your elements
 > [!CAUTION]
 > This is not the right way
@@ -108,8 +109,6 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 ```
 
 ### Writing Javascript
-- Use 1 tab indentation for clearer code
-- Unlike CSS do not end your lines with a semicolon " ; "
 - Use comments to explain code for youself and other developers
 > [!CAUTION]
 > This is not the right way
