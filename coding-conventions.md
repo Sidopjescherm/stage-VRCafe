@@ -11,7 +11,7 @@ In our way of coding we need to have a development lifecycle so that every compo
 - Integrate: by the use of pull request you integrate the code made from a branch and merge it into the dev branch.
 
 ### Pull request and branches
-For the branches in this project we should have two main 'trees.' The main and the dev should always be there, but the other branches should be deleted via the Github desktop way of deleting a branch. Another 
+For the branches in this project we should have two main 'trees.' The main and the dev should always be there, but the other branches should be deleted via the Github desktop way of deleting a branch. 
 <br>
     <img src="/assets/coding-convention/branches.jpg" width="400">
 </br>
