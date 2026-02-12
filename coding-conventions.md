@@ -105,7 +105,12 @@ A great way to have a consistent status in SEO, Performance and Accessability is
         activiteitenLink.classlist.add("hover-leave")
     }
 ```
-
 ### Using const, let or var
 - When writing Javascript it is key to always try to use `const`
 - If a variable it's value will change after initalization it should be a let
+
+## TailwindCSS
+Utility-first frameworks like TailwindCSS actually don't help much more than regular CSS does. So the best thing would be to slowly roll back the TailwindCSS and replace it with vanilla CSS. 
+
+## REACT
+For components that are still made in React it would be smart to transfer them into Astro components due to the Javascript shipping in React.
