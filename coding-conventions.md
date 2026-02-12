@@ -1,4 +1,4 @@
-# Coding Conventions VRcafe
+# Documentation VRcafe
 
 ## Dev lifecycle
 <img src="/assets/coding-convention/dev-lifecycle.jpg" width="400">
