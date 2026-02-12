@@ -9,6 +9,9 @@ When writing commits for updating the code you need to write a descriptive title
 ```
 (summary of the isssue you've been working on)
 ```
+<br>
+    <img src="../stage-VRCafe/assets/commit message.png">
+</br>
 
 ### Commit often/Conventional commits
 To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work.
