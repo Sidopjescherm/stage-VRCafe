@@ -40,7 +40,7 @@ When writing commits for updating the code you need to write a descriptive title
 To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work. Take a look at how [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) work.
 
 ### Standards
-A great way to have a consistent status in SEO, Performance and Accessability is PE(progressivly enhanced.) This standard not only helps making your website usable for most people, it also helps search engines with indexing your content while still getting to have the 'fun' stuff. 
+A great way to have a consistent status in SEO, Performance and Accessability is PE(progressivly enhanced.) This standard not only helps making your website usable for most people, it also helps search engines with indexing your content while still getting to have the 'fun' stuff. To learn more about how SEO practices are the same as Accessable practices read about SEO best [practices](https://dev.to/anisubhra_sarkar/frontend-seo-best-practices-a-developers-guide-to-optimizing-your-website-57j4).
 
 ### Naming things
 - Keep your classes, id's, functions and `const`'s descriptive of what they are and keep to the style of writing. 
