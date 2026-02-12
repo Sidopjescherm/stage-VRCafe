@@ -1,8 +1,11 @@
 # Coding conventions for VRcafe
 
+
 ## Commits
 When writing commits for updating the code you need to write a descriptive title and in the commit message a condense summary of what you fixed. The way a commit message should be written is: 
+<br>
 (fix, feature or documentation) (number of the issue you're fixing) (title of the issue)
+</br>
 (summary of the isssue you've been working on)
 
 ### Commit often/Conventional commits
@@ -55,7 +58,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 > [!CAUTION]
 > This is not the right way
 ```css
-    article{
+    article {
         background-color: var(--primary-color)
         border-radius: 20%
         corner-shape: bevel
@@ -64,7 +67,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 > [!TIP]
 > This is the right way
 ```css
-    article{
+    article {
         background-color: var(--primary-color);
         border-radius: 20%;
         /* For users that use browsers that support corner-shape  */
@@ -78,6 +81,28 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 - Use 1 tab indentation for clearer code
 - Unlike CSS do not end your lines with a semicolon " ; "
 - Use comments to explain code for youself and other developers
+> [!CAUTION]
+> This is not the right way
+```javascript
+    let link = document.querySelector('a[href="#activiteiten"]');
+    link.addEventlistener("mouseleave", linking);
+    function linking() {
+        link.classlist.add("activelink")
+    };
+```
+> [!TIP]
+>This is the right way
+```javascript
+    let activiteitenLink = document.querySelector('a[href="#activiteiten"')
+
+    // listen to when the user their pointer leaves the area where they hover over
+    activiteitenLink.addEventlistener("pointerleave", nonHover)
+
+    // In this function i'll add the hover-leave classlist I made in css so it will create an effect when leaving
+    funtion nonHover() {
+        activiteitenLink.classlist.add("hover-leave")
+    }
+```
 
 ### Using const, let or var
 - When writing Javascript it is key to always try to use const
