@@ -11,7 +11,7 @@ In our way of coding we need to have a development lifecycle so that every compo
 - Integrate: by the use of pull request you integrate the code made from a branch and merge it into the dev branch.
 
 ### Pull request and branches
-For the branches in this project we should have two main 'trees.' The main and the dev should always be there, but the other branches should be deleted via the Github desktop way of deleting a branch. 
+For the branches in this project we should have two main 'trees.' The main and the dev should always be there, but the other branches should be deleted via the Github desktop way of deleting a branch. With this way of thinking we will be using the [GitFlow's Workflow.](https://about.gitlab.com/blog/what-is-gitflow/#gitflows-workflow)
 <br>
     <img src="/assets/coding-convention/branches.jpg" width="400">
 </br>
@@ -37,7 +37,7 @@ When writing commits for updating the code you need to write a descriptive title
 </br>
 
 #### Commit often/Conventional commits
-To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work.
+To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work. Take a look at how [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) work.
 
 ### Standards
 A great way to have a consistent status in SEO, Performance and Accessability is PE(progressivly enhanced.) This standard not only helps making your website usable for most people, it also helps search engines with indexing your content while still getting to have the 'fun' stuff. 
