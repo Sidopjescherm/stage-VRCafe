@@ -10,7 +10,7 @@ In our way of coding we need to have a development lifecycle so that every compo
 
 ### Pull request and branches
 For the branches in this project we should have two main 'trees.' The main and the dev should always be there, but the other branches should be deleted via the Github desktop way of deleting a branch. Another 
-<img src="/assets/coding-convention/branches.jpg">
+<img src="/assets/coding-convention/branches.jpg" width="400">
 
 #### Pull request
 For pull requests it is important that a few rules are applied to help your colleagues test on a professional level. here's the way to write a pull request:
