@@ -3,10 +3,12 @@
 
 ## Commits
 When writing commits for updating the code you need to write a descriptive title and in the commit message a condense summary of what you fixed. The way a commit message should be written is: 
-<br>
+```
 (fix, feature or documentation) (number of the issue you're fixing) (title of the issue)
-</br>
+```
+```
 (summary of the isssue you've been working on)
+```
 
 ### Commit often/Conventional commits
 To make sure you have your code saved regularly and not be lost commit your changes regularly. This way part of your code is saved and you'll keep your colleagues more up to date on your work.
