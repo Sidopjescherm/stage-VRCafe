@@ -1,6 +1,7 @@
 ## Dev lifecycle
 <img src="/assets/coding-convention/dev-lifecycle.jpg">
 In our way of coding we need to have a development lifecycle so that every component we have is up to our new standard. 
+
 - Analyse: know who you're making this for and what they want from this page or component.
 - Design: know what the user needs to feel welcome and motivated to interact with the website.
 - Build: use accessable and progressivly enhanced practices to build better code.
