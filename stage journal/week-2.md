@@ -1,9 +1,7 @@
-## maandag
+# Week 2 van stage
 
-## dinsdag
+In deze nieuwe week van stage heb ik mijn [SEO onderzoek](/research/seo-onderzoek.md) afgerond voor het VRcafe. Voor mijn onderzoek moest ik kijken naar hoe wij onze SEO kunnen verbeteren op de VRcafe website. In dit onderzoek heb ik wat meer geleerd over SEO en hoe Google websites indexeerd en opzoekt in het systeem. Na het maken van dit onderzoek was mij opgedragen om ook verder samen te werken met de andere front-end stagiaire Ivan die ook onderzoek hiernaar deed.
 
-## woensdag
+Op dinsdag en woensdag ochtend heb ik samen met Ivan een [onderzoek](/research/presentation.md) gemaakt dat grotendeels uitlegt wat wij gevonden hebben. Omdat presentaties hier de manier zijn om ideeën goed over te laten komen hebben we [dit](https://docs.google.com/presentation/d/1r93JZ1sIC-FrzNo2ggl7xUzgn1RRCC7klexizFQ5S_M/edit?slide=id.p#slide=id.p) gemaakt. 
 
-## donderdag
-
-## vrijdag
+Verder deze week hebben we een aantal nieuwe user stories gemaakt die relevant zijn voor de website. We zullen deze week nog meer user stories maken, maar ik ben nu nog bezig met de nieuwe code conventies die wij gaan gebruiken bij het VRcafe. Ik ben bezig geweest met de code bekijken die er is gemaakt, code conventies van FDND en de code conventies van Google. De nieuwe conventies zijn naar mijn mening goed samengesteld en samen met de hulp van @joostf zijn ze beter geworden.
