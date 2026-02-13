@@ -88,7 +88,6 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 
 ### Writing CSS
 - Follow how the HTML has been written and write the CSS in the same way. 
-- For future pages it would be the best to not use utility-first frameworks like TailwindCSS. Vanilla CSS could get you far enough.
 - Use @supports to progressivley enhance your elements
 > [!CAUTION]
 > This is not the right way
@@ -139,9 +138,6 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 #### Using const, let or var
 - When writing Javascript it is key to always try to use `const`
 - If a variable it's value will change after initalization it should be a let
-
-### TailwindCSS
-Utility-first frameworks like TailwindCSS actually don't help much more than regular CSS does. So the best thing would be to slowly roll back the TailwindCSS and replace it with vanilla CSS. 
 
 ### REACT
 For components that are still made in React it would be smart to transfer them into Astro components due to the Javascript shipping in React.
