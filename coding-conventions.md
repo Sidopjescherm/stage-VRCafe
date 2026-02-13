@@ -27,10 +27,10 @@ For pull requests it is important that a few rules are applied to help your coll
 ### Commits
 When writing commits for updating the code you need to write a descriptive title and in the commit message a condense summary of what you fixed. The way a commit message should be written is: 
 ```
-(fix, feature or documentation) (number of the issue you're fixing) (title of the issue)
+(fix, feature or documentation) (title of what you've worked on)
 ```
 ```
-(summary of the isssue you've been working on)
+(summary of what you've been working on)
 ```
 <br>
     <img src="/assets/coding-convention/commit-message.png">
