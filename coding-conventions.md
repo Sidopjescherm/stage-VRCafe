@@ -73,7 +73,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
     3. How it will impact the user or developer
 
 ### Writing HTML
-- Use semantic and logical HTML elements when creating a webpage. 
+- Use semantic and logical HTML elements when creating a webpage, because a lot of HTML elements already have a good to use function and play naturally in their roles. Here's a good [article](https://css-tricks.com/explaining-the-accessible-benefits-of-using-semantic-html-elements/) about understanding semantic HTML.
 - When a link is used make sure it is an `a` element and when a line of text is used to describe something it's a `p` element. 
 > [!CAUTION]
 > This is not the right way
