@@ -65,12 +65,78 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 
 ### Syntax
 - Use 1 tab indetation
+> [!CAUTION]
+> This is not the right way
+```html
+ <details>
+    <summary></summary>
+     <p></P>
+ <details>
+```
+> [!TIP]
+>This is the right way
+```html
+    <details>
+        <summary></summary>
+        <p></P>
+    </details>
+```
 - End your coding lines in CSS with a semicolon " ; "
+> [!CAUTION]
+> This is not the right way
+```css
+    article {
+        background-color: hotpink
+    }
+```
+> [!TIP]
+> This is the right way
+```css
+    article {
+        background-color: hotpink;
+    }
+```
 - Do not end your coding lines in Javascript with a semicolon " ; "
+> [!CAUTION]
+> This is not the right way
+```javascript
+    const ervaringBoeken = document.querySelector('a[href="/boeken"]');
+```
+> [!TIP]
+> This is the right way
+```javascript
+    const ervaringBoeken = document.querySelector('a[href="/boeken"]')
+```
 - Use comments to explain code for youself and other developers. To successfully write comments about the code you'll need the following:
     1. Explain in two sentences max what it is you're making
     2. What certain functions need to do 
     3. How it will impact the user or developer
+> [!CAUTION]
+> This is not the right way
+```javascript
+    let activiteitenLink = document.querySelector('a[href="#activiteiten"')
+
+    // i'm adding an eventlistener here
+    activiteitenLink.addEventlistener("pointerleave", nonHover)
+
+    // add classlist
+    funtion nonHover() {
+        activiteitenLink.classlist.add("hover-leave")
+    }
+```
+> [!TIP]
+> This is the right way
+```javascript
+    let activiteitenLink = document.querySelector('a[href="#activiteiten"')
+
+    // listen to when the user's pointer leaves the area where they hover over
+    activiteitenLink.addEventlistener("pointerleave", nonHover)
+
+    // In this function i'll add the hover-leave classlist I made in css so it will create an effect when leaving
+    funtion nonHover() {
+        activiteitenLink.classlist.add("hover-leave")
+    }
+```
 
 ### Writing HTML
 - Use semantic and logical HTML elements when creating a webpage, because a lot of HTML elements already have a good to use function and play naturally in their roles. Here's a good [article](https://css-tricks.com/explaining-the-accessible-benefits-of-using-semantic-html-elements/) about understanding semantic HTML.
@@ -127,7 +193,7 @@ A great way to have a consistent status in SEO, Performance and Accessability is
 ```javascript
     let activiteitenLink = document.querySelector('a[href="#activiteiten"')
 
-    // listen to when the user their pointer leaves the area where they hover over
+    // listen to when the user's pointer leaves the area where they hover over
     activiteitenLink.addEventlistener("pointerleave", nonHover)
 
     // In this function i'll add the hover-leave classlist I made in css so it will create an effect when leaving
