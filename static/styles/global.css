@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'rubik-bold';
+    src: url(../fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'rubik-mid';
+    src: url(../fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'rubik-regular';
+    src: url(../fonts/Rubik-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 1em;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-darker-purple: hsl(280 81 11);
+    --primary-color-dark-purple: hsl(280 81 21);
+    --primary-color-true-purple: hsl(280 81 31);
+    --primary-color-light-purple: hsl(280 81 41);
+    --primary-color-lighter-purple: hsl(280 81 51); 
+
+    --primary-neutral-color-dark-purple: hsl(280 10 31);
+    --primary-neutral-color-purple: hsl(280 20 41);
+
+    --accent-color-darker-green: hsl(157 88 18);
+    --accent-color-dark-green: hsl(157 88 38);
+    --accent-color-true-green: hsl(157 88 58);
+    --accent-color-light-green: hsl(157 88 68);
+    --accent-color-lighter-green: hsl(157 88 78); 
+
+    --neutral-color-dark: hsl(280 11 11);
+    --neutral-color-light: hsl(279 5 98);   
+
+    --primary-font-bold: 'rubik-bold';
+    --primary-font-mid: 'rubik-mid';
+    --primary-font-regular: 'rubik-regular';
+
+    --border-radius: 30px;
+}
+
+h1, h2, a {
+    font-family: var(--primary-font-bold);
+}
+
+h1 {
+    font-size: 3.185rem;
+}
+
+h2 {
+    font-size: 3.052rem;
+}
+
+a {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-family: var(--primary-font-mid);
+    font-size: 2.441rem;
+}
+
+p {
+    font-family: var(--primary-font-regular);
+    font-size: 1rem;
+}
+
