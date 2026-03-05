@@ -15,8 +15,7 @@
 
 * {
     margin: 0;
-    padding: 1em;
-    min-height: 100vh;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -60,6 +59,7 @@ h2 {
 
 a {
     font-size: 1.25rem;
+    text-decoration: none;
 }
 
 h3 {

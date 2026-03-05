@@ -1,6 +1,6 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-
+	import favicon from '$lib/assets/favicon.svg'
+	import '$lib/styles/global.css'
 	let { children } = $props();
 </script>
 
@@ -8,4 +8,20 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<nav>
+	<a href="example.org">
+		menu
+	</a>
+</nav>
+
 {@render children()}
+
+<style>
+	nav {
+		background-color: var(--primary-color-true-purple);
+	}
+
+	a {
+		color: var(--neutral-color-light  );
+	}
+</style>
